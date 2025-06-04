@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presentación de Antony</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body style="background-image: url(images/fondo-index.avif); background-size: cover; background-repeat: no-repeat;">
+
+  <!-- Navbar será insertado aquí -->
+  <div id="navbar-container"></div>
+
+  <div id="site-wrapper">
+    <main id="card">
+      <div class="image-block">
+        <img src="images/profile.jpg">
+      </div>
+      <div class="text-block">
+        <div class="header">
+          <h1>Antony Medina</h1>
+          <h2>Lic. Desarrollo de Software</h2>
+        </div>
+        <p>"Si puedes imaginarlo, puedes programarlo."</p>
+
+        <ul class="no-style">
+          <li><a href="https://github.com/dev-antonymedina" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/dev-antonymedina" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="mailto:medinaantony1998@hotmail.com"><i class="bi bi-envelope"></i></a></li>
+          <li><a href="https://wa.me/50763208167" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Cargar navbar desde navbar.html
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar-container').innerHTML = data);
+  </script>
+</body>
+</html>

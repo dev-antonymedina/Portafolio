@@ -1,0 +1,124 @@
+/* ----------------------- */
+/* -- SECCIÓN GENERAL -- */
+/* ----------------------- */
+
+html,
+body {
+  height: 100%;              /* Ocupa el 100% de la altura de la ventana */
+  overflow: hidden;          /* Oculta las barras de scroll si el contenido se desborda */
+}
+
+body {
+  background-color: #aac2c7;                           /* Color de fondo principal */
+  font: 16px/1 'PT Sans', 'arial', sans-serif;         /* Fuente base con tamaño 16px y línea igual a la altura del texto */
+  margin: 0;                                            /* Elimina márgenes por defecto del body */
+  padding: 0;                                           /* Elimina relleno por defecto del body */
+}
+
+
+/* -------------------------- */
+/* -- SECCIÓN DE INDEX -- */
+/* -------------------------- */
+
+
+.image-block img {
+  width: 150px;               /* Ancho fijo de las imágenes */
+  border-radius: .8em;        /* Bordes redondeados para dar un look suave */
+}
+
+.text-block {
+  color: #2d2d2d;             /* Color oscuro para el texto */
+}
+
+#site-wrapper {
+  display: flex;              /* Usa Flexbox para posicionar el contenido */
+  justify-content: center;    /* Centra el contenido horizontalmente */
+  align-items: center;        /* Centra el contenido verticalmente */
+  min-height: 100vh;          /* Mínimo alto igual a la altura completa de la pantalla */
+  padding: 1rem;              /* Espaciado interno */
+  box-sizing: border-box;     /* Incluye padding en el cálculo del ancho/alto total */
+}
+
+#card {
+  display: flex;                                      /* Flexbox para organizar elementos hijos */
+  flex-wrap: wrap;                                    /* Permite que los hijos se acomoden en varias líneas si es necesario */
+  justify-content: center;                            /* Centrado horizontal */
+  gap: 2rem;                                           /* Espacio entre elementos hijos */
+  background-image: url(../images/groovepaper.png);   /* Fondo con textura */
+  padding: 2em;                                        /* Espaciado interno */
+  border-radius: .8em;                                /* Bordes redondeados */
+  box-shadow: 6px 12px 38px -5px rgba(0, 0, 0, 0.26);  /* Sombra exterior para profundidad */
+}
+
+.header {
+  font-size: .8rem;           /* Tamaño pequeño para texto tipo encabezado secundario */
+}
+
+.no-style {
+  list-style: none;          /* Elimina viñetas de listas */
+  padding-left: 0;           /* Elimina sangría de la lista */
+}
+
+.no-style li {
+  display: inline-block;     /* Muestra los elementos en línea (horizontalmente) */
+}
+
+.white-text {
+  color: white !important;   /* Texto blanco, con !important para asegurar que se aplique */
+}
+
+
+/* -------------------------- */
+/* -- SECCIÓN DE SOBRE MI -- */
+/* -------------------------- */
+
+.card-personalizado {
+  border-radius: 20px;       /* Bordes redondeados */
+  text-align: justify;       /* Justifica el texto para alinearlo a ambos lados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra suave para dar profundidad */
+  padding: 20px;             /* Espaciado interno */
+  background-color: #ffffff; /* Fondo blanco */
+  transition: transform 0.3s ease; /* Suaviza la transición al hacer hover */
+}
+
+.card-personalizado:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta ligeramente cuando se pasa el mouse */
+}
+
+
+/* --------------------------------- */
+/* -- SECCIÓN DE CONTACTO -- */
+/* --------------------------------- */
+
+.info-card {
+  background-color: #f8f9fa;                  /* Fondo gris claro */
+  border-radius: 15px;                        /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);   /* Sombra sutil para profundidad */
+}
+
+.stat-box {
+  border-right: 1px solid #e0e0e0;            /* Borde derecho claro */
+  border-bottom: 1px solid #e0e0e0;           /* Borde inferior claro */
+  padding: 20px 10px;                         /* Espaciado interno */
+}
+
+/* Elimina el borde derecho para el segundo y cuarto elemento */
+.stat-box:nth-child(2),
+.stat-box:nth-child(4) {
+  border-right: none;
+}
+
+/* Elimina el borde inferior para el tercer y cuarto elemento */
+.stat-box:nth-child(3),
+.stat-box:nth-child(4) {
+  border-bottom: none;
+}
+
+.stat-box {
+  color: black;                               /* Texto negro */
+  text-align: center;                         /* Centrado de texto */
+  font-size: 1.2rem;                          /* Tamaño grande para resaltar */
+  font-weight: bold;                          /* Texto en negrita */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);   /* Sombra ligera */
+  border-radius: 15px;                        /* Bordes redondeados */
+}

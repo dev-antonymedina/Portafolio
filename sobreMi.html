@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre mi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-image: url(images/fondo.png); background-size: cover; background-repeat: no-repeat;">
+
+  <!-- Navbar será insertado aquí -->
+  <div id="navbar-container"></div>
+
+  <!-- Primera columna: Texto en un card -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card-personalizado">
+
+          <h1><strong>BIENVENIDO</strong></h1>
+          <p>
+            Me llamo <strong>Antony Medina</strong>.<br> Tengo 27 años y estoy emocionado de presentarme a ustedes.<br>
+            Soy un joven carismático y entusiasta del mundo digital, con una fuerte pasión por el desarrollo de software
+            y las nuevas tecnologías.<br>
+            Cuento con conocimientos en desarrollo <strong>frontend</strong> utilizando <strong>HTML</strong>,
+            <strong>CSS</strong> y <strong>Bootstrap</strong> para crear interfaces modernas y responsivas.<br>
+            En el <strong>backend</strong>, tengo experiencia trabajando con <strong>PHP</strong> y
+            <strong>Java</strong>, lo que me permite construir soluciones funcionales y escalables.<br>
+            Además, poseo conocimientos en bases de datos relacionales y no relacionales, especialmente
+            <strong>MySQL</strong> y <strong>MongoDB</strong>.<br>
+            Me destaco por mi actitud proactiva, mi capacidad para trabajar en equipo y mi deseo constante de aprender y
+            superarme día a día.<br>
+            He culminado recientemente mis estudios en la carrera de Desarrollo de Software y me encuentro a la espera
+            de mi ceremonia de graduación.<br>
+            Mi sueño es crear soluciones tecnológicas que generen un impacto positivo en la vida de las personas.<br>
+            Creo firmemente que con esfuerzo, fe y dedicación, todo es posible. 💻🚀
+          </p>
+
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="card-personalizado text-center">
+          <h4 class="fw-bold">"Transformando ideas en código"</h4>
+          <p class="text-muted">Desarrollador en formación | Apasionado por la tecnología</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar-container').innerHTML = data);
+  </script>
+</body>
+
+</html>
